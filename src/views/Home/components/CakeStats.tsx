@@ -35,7 +35,7 @@ const CakeStats = () => {
     <StyledCakeStats>
       
       <CardBody>
-        <Heading size="xl" mb="24px">
+        <Heading size="xl" mb="24px" className="bgbxheading">
           {TranslateString(534, 'MELODY Stats')}
         </Heading>
         <Row>

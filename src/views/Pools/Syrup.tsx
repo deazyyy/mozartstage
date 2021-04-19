@@ -33,7 +33,7 @@ const Farm: React.FC = () => {
   )
 
   return (
-    <Page>
+    <Page style={{padding:0}}>
       {/* <Hero>
         <div>
           <Heading as="h1" size="xxl" mb="16px">
@@ -49,7 +49,7 @@ const Farm: React.FC = () => {
       </Hero> */}
       {/* <PoolTabButtons stakedOnly={stakedOnly} setStakedOnly={setStakedOnly} />
       <Divider /> */}
-      <FlexLayout>
+      <FlexLayout style={{padding:0,margin:"0 -8px"}}>
         <Route exact path={`${path}`}>
           <>
             {stakedOnly

@@ -80,7 +80,7 @@ const FarmedStakingCard = () => {
   return (
     <StyledFarmStakingCard>
       <CardBody>
-        <Heading size="xl" mb="24px">
+        <Heading size="xl" mb="24px" className="bgbxheading">
           {TranslateString(542, 'Planets & Staking')}
         </Heading>
         <Address>

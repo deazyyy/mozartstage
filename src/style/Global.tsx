@@ -74,6 +74,12 @@ const GlobalStyle = createGlobalStyle`
     cursor:pointer;
     margin-right:20px
   }
+  .menufooter{
+    position:relative;
+    background:#fff;
+    padding:8px 0;
+  }
+  .bgbxheading{font-size:28px}
 `
 
 export default GlobalStyle

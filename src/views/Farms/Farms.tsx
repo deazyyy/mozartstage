@@ -262,7 +262,7 @@ const Farms: React.FC = () => {
     }
 
     return (
-      <div>
+      <div style={{margin:"0 -8px"}}>
         <FlexLayout>
           <Route exact path={`${path}`}>
             {farmsStaked.slice(0,3).map((farm) => (
@@ -293,7 +293,7 @@ const Farms: React.FC = () => {
           {TranslateString(999, 'Stake Liquidity Pool (LP) tokens to earn.')}
         </Heading>
       </Header> */}
-      <Page>
+      <Page style={{padding:0}}>
         {/* <ControlContainer>
           <ViewControls>
             <ToggleView viewMode={viewMode} onToggle={(mode: ViewMode) => setViewMode(mode)} />
