@@ -260,12 +260,12 @@ const Farms: React.FC = () => {
 
       return <Table data={rowData} columns={columns} />
     }
-
+    // .slice(0,3)
     return (
       <div style={{margin:"0 -8px"}}>
         <FlexLayout>
           <Route exact path={`${path}`}>
-            {farmsStaked.slice(0,3).map((farm) => (
+            {farmsStaked.map((farm) => (
               <FarmCard key={farm.pid} farm={farm} cakePrice={cakePrice} account={account} removed={false} />
             ))}
           </Route>
