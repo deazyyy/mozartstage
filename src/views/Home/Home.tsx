@@ -31,6 +31,10 @@ const Hero = styled.div`
   min-height: 300px;
   border-radius:20px;
   align-items: flex-start;
+  @media (max-width: 768px) {
+    background-size: 45% , cover;
+    background-position:right 0px bottom 0%,center;
+  } 
 `
 
 const Cards = styled(BaseLayout)`
@@ -54,9 +58,18 @@ const Cards = styled(BaseLayout)`
       grid-column: span 6;
     }
   }
+  @media (max-width: 968px) {
+    grid-template-columns: unset;
+  } 
 `
 const HeroInner = styled.div`
   width:50%;
+  @media (max-width: 768px) {
+    width:80%;
+  } 
+  @media (max-width: 500px) {
+    width:100%;
+  } 
 `
 
 const CTACards = styled(BaseLayout)`

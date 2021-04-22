@@ -31,14 +31,19 @@ const Participate = styled(Button)`
   margin-left:10px;
   background-color: #d75d45;
 `
+const FlexOuter = styled(Flex)`
+@media (max-width: 968px) {
+  flex-direction:column-reverse
+} 
 
+`
 
 const BuyMelody = () => {
   const TranslateString = useI18n()
   return (
     <StyledTotalValueLockedCard>
      
-        <Flex width="100%" alignItems="center">
+        <FlexOuter width="100%" alignItems="center">
           <img src="images/mozart/piano.png" alt="piano" className="pianoimg"/>
           <TimeOuter>
             <Heading size="lg" mb="10px">
@@ -55,7 +60,7 @@ const BuyMelody = () => {
               <Participate >Participate</Participate>
             </div>
           </TimeOuter>
-        </Flex>
+        </FlexOuter>
 
     </StyledTotalValueLockedCard>
   )

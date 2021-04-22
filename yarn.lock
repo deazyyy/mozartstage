@@ -2017,10 +2017,9 @@
     eslint-plugin-react "^7.21.5"
     eslint-plugin-react-hooks "^4.0.0"
 
-"@pancakeswap-libs/uikit@^0.25.3":
+"@pancakeswap-libs/uikit@deazyyy/mozartuikit":
   version "0.25.3"
-  resolved "https://registry.yarnpkg.com/@pancakeswap-libs/uikit/-/uikit-0.25.3.tgz#4c333c7af1772ffe882c0f1ee365de4edf2033ea"
-  integrity sha512-+lRdMrI+pWG0Gedj94kYc1F9iz2whugG4R0iZq5tKv5mn3tQgqdsTn94g1+f7Jb7B9yeI6UsUFmMFzcmz1OLnw==
+  resolved "https://codeload.github.com/deazyyy/mozartuikit/tar.gz/a6a1030b2ba1a0a9189d9fde83d1df4f3a88e0b1"
   dependencies:
     "@popperjs/core" "^2.9.2"
     "@types/lodash" "^4.14.168"

@@ -36,7 +36,16 @@ const GlobalStyle = createGlobalStyle`
       display:flex;
       align-items:center;
       justify-content:space-between;
+      
     }
+    @media (max-width: 500px) {
+      height:auto;
+      .menutopdeskinner{
+        flex-direction:column;
+        margin-top:10px;
+        margin-bottom:10px;
+      }
+    } 
   }
   .innerbody{
     max-width:1200px;
@@ -53,7 +62,11 @@ const GlobalStyle = createGlobalStyle`
     margin-left:-12px;
     margin-top:-20px;
     height:100%;
-    max-height:450px
+    max-height:450px;
+    @media (max-width: 968px) {
+      max-height:300px;
+      margin-top:0;
+    } 
   }
   .mozartstandingimg{
     height:100%;
@@ -67,6 +80,9 @@ const GlobalStyle = createGlobalStyle`
     display: block;
     margin-right: 25px;
     margin-top: -100px;
+    @media (max-width: 968px) {
+      bottom: -15px;
+    } 
   }
   .nav_link{
     color: #000000;
@@ -80,6 +96,23 @@ const GlobalStyle = createGlobalStyle`
     padding:8px 0;
   }
   .bgbxheading{font-size:28px}
+
+
+  //responsive
+  @media (max-width: 968px) {
+    // .framelgbg {
+    // 	background: url("images/hyrule/frame402.png");
+    // 	background-size: 100% 100%;
+    // }
+    .homecardouter .bgbxl{
+      // background: url("images/hyrule/framebxl400bg.png");
+      // background-size: 100% 100%;
+      min-height: 254px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
 `
 
 export default GlobalStyle
