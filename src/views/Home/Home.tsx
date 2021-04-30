@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useRef } from 'react'
 import styled from 'styled-components'
 import { Heading, Text, BaseLayout,Button } from '@pancakeswap-libs/uikit'
 import useI18n from 'hooks/useI18n'
@@ -14,6 +14,7 @@ import EarnAssetCard from 'views/Home/components/EarnAssetCard'
 import WinCard from 'views/Home/components/WinCard'
 import Farms from 'views/Farms/Farms'
 import Farm from 'views/Pools/Syrup'
+import ClaimModal from './Modals/Claim'
 
 const Hero = styled.div`
   align-items: center;
@@ -95,16 +96,17 @@ const CTACards = styled(BaseLayout)`
 
 const Home: React.FC = () => {
   const TranslateString = useI18n()
-
+  const childRef = useRef(null);
   return (
     <Page>
+      <ClaimModal ref={childRef}/>
       <Hero>
         <HeroInner>
           <Heading as="h1" size="xl" mb="10px" color="secondary">
             {TranslateString(576, 'Headline goes here')}
           </Heading>
           <Text mb="10px">{TranslateString(578, 'Lorem ipsum dolor sit amet, consetetur  elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore  aliquyam erat, sed.')}</Text>
-          <Button>Learn More </Button>
+          <Button onClick={() => childRef.current.openModal()} >Learn More </Button>
         </HeroInner>
       </Hero>
       <div>

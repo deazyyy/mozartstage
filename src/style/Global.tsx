@@ -98,6 +98,48 @@ const GlobalStyle = createGlobalStyle`
   .bgbxheading{font-size:28px}
 
 
+  .claimmodelouter{
+    padding:20px;
+    border: 2px solid #ededed;
+    border-radius:20px;
+    background:#fff;
+    h2{
+      font-size:22px;
+      font-weight:700;
+    }
+    h3{
+      font-size:18px;
+      font-weight:600;
+    }
+    .mozarrthead{
+      position:absolute;
+      height:90px;
+      width:auto;
+      top:0;
+      left:50%;
+      transform:translate(-50%,-50%);
+    }
+    .modalouter{
+      margin-top:40px;
+      color:#000;
+      .type{
+        text-decoration:underline;
+      }
+      .gbg{
+        border-radius: 15px;
+        background-color: rgba(246,246,246,1);
+        padding:16px;
+        line-height:1.5;
+      }
+    }
+    
+  }
+  .claimairdrop{
+    padding:60px 20px;
+    text-align:center;
+    margin-top:14px;
+  }
+
   //responsive
   @media (max-width: 968px) {
     // .framelgbg {
